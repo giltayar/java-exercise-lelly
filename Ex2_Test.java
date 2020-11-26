@@ -8,7 +8,7 @@ class Ex2_Test {
         assert Ex2.poly(new double[] { 3, 4 }).equals("3.0 + 4.0x");
         assert Ex2.poly(new double[] { 3, 4, 5 }).equals("3.0 + 4.0x + 5.0x^2");
 
-        assert Math.abs((Ex2.root(new double[] { 3, 4, 1 }, -4, -2.5, 0.01) - -3) / 2) <= 0.001;
+        assert Math.abs((Ex2.root(new double[] { 3, 4, 1 }, -4, -2.5, 0.001) - -3) / 2) <= 0.001;
 
         assert Arrays.equals(Ex2.add(new double[] { 1, 2 }, new double[] { 3, 4, 5 }), new double[] { 4, 6, 5 });
 

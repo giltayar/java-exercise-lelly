@@ -20,13 +20,16 @@ public class Ex2 {
       if (i > 0) {
         result += " + ";
       }
+
       result += poly[i];
+
       if (i == 1) {
         result += "x";
       } else if (i > 1) {
         result += "x^" + i;
       }
     }
+
     return result;
   }
 
@@ -95,7 +98,9 @@ public class Ex2 {
 
   private static double sign(double x) {
     if (x  > 0) return 1;
+
     if (x < 0) return -1;
+
     return 0;
   }
 }
